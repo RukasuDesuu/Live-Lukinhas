@@ -49,10 +49,22 @@ body{
     font-size: 1.6rem;
     letter-spacing: .1rem;
     font-weight: bold;
-    
-    
-
 }
+
+.team-info input[type=checkbox]:before{
+    content:""; 
+    display:inline-block; 
+    width:20px; 
+    height:20px; 
+    background:#0f1519;
+    border: 1px solid #0f1519;
+}
+
+.team-info input[type=checkbox]:checked:before{ 
+    content: url("./images/checked.png");
+    width:20px; 
+    height:20px; 
+ }
 
 .events{
     display: flex;
