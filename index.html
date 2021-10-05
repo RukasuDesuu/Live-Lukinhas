@@ -9,14 +9,43 @@
 
 </head>
 <body>
-    <div class='events'>
+    <div id="configuration">
+        <div>
+            <select id="teams-select1" onchange="change_image(1)">
+            </select>
+            <select id="teams-select2" onchange="change_image(2)">
+            </select>
+        </div>
+        <div>
+            <select id="teams-select3" onchange="change_image(3)">
+            </select>
+            <select id="teams-select4" onchange="change_image(4)">
+            </select>
+        </div>
+        <div>
+            <select id="teams-select5" onchange="change_image(5)">
+            </select>
+            <select id="teams-select6" onchange="change_image(6)">
+            </select>
+        </div>
+        <div>
+            <select id="teams-select7" onchange="change_image(7)">
+            </select>
+            <select id="teams-select8" onchange="change_image(8)">
+            </select>
+        </div>
+    </div>
+    
+    <div class='events' id="event1">
         <div class='teams'>
             <div class='teams team1'>
-                <img src="./images/FPX.png" alt="team1">
+                <img src="./images/FPX.png" alt="team2" id='image-team1'>
                 <div class="team-info">
                     <h2>
-                        <span class='porcem'>10%</span>
-                        <input type="checkbox" name="">
+                        <input type="text" name="">
+                        <div style="display: inline-flex;">
+                            <input type="checkbox" name="">
+                        </div>
                     </h2>
                 </div>
             </div>
@@ -26,16 +55,116 @@
             </div>
 
             <div class='teams team2'>
-                <img src="./images/FPX.png" alt="team2">
+                <img src="./images/FPX.png" alt="team2" id='image-team2'>
                 <div class="team-info">
                     <h2>
-                        <input type="checkbox" name="" >
-                        <span class='porcem'>10%</span>
+                        <div style="display: inline-flex;">
+                            <input type="checkbox" name="">
+                        </div>
+                        <input type="text" name="" >
                     </h2>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
+
+    <div class='events' id="event2">
+        <div class='teams'>
+            <div class='teams team1'>
+                <img src="./images/FPX.png" alt="team2" id='image-team3'>
+                <div class="team-info">
+                    <h2>
+                        <input type="text" name="">
+                        <div style="display: inline-flex;">
+                            <input type="checkbox" name="">
+                        </div>
+                    </h2>
+                </div>
+            </div>
+
+            <div class='vs'>
+                <p>vs</p>
+            </div>
+
+            <div class='teams team2'>
+                <img src="./images/FPX.png" alt="team2" id='image-team4'>
+                <div class="team-info">
+                    <h2>
+                        <div style="display: inline-flex;">
+                            <input type="checkbox" name="">
+                        </div>
+                        <input type="text" name="" >
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='events' id="event3">
+        <div class='teams'>
+            <div class='teams team1'>
+                <img src="./images/FPX.png" alt="team2" id='image-team5'>
+                <div class="team-info">
+                    <h2>
+                        <input type="text" name="">
+                        <div style="display: inline-flex;">
+                            <input type="checkbox" name="">
+                        </div>
+                    </h2>
+                </div>
+            </div>
+
+            <div class='vs'>
+                <p>vs</p>
+            </div>
+
+            <div class='teams team2'>
+                <img src="./images/FPX.png" alt="team2" id='image-team6'>
+                <div class="team-info">
+                    <h2>
+                        <div style="display: inline-flex;">
+                            <input type="checkbox" name="">
+                        </div>
+                        <input type="text" name="" >
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='events' id="event4">
+        <div class='teams'>
+            <div class='teams team1'>
+                <img src="./images/FPX.png" alt="team2" id='image-team7'>
+                <div class="team-info">
+                    <h2>
+                        <input type="text" name="">
+                        <div style="display: inline-flex;">
+                            <input type="checkbox" name="">
+                        </div>
+                    </h2>
+                </div>
+            </div>
+
+            <div class='vs'>
+                <p>vs</p>
+            </div>
+
+            <div class='teams team2'>
+                <img src="./images/FPX.png" alt="team2" id='image-team8'>
+                <div class="team-info">
+                    <h2>
+                        <div style="display: inline-flex;">
+                            <input type="checkbox" name="">
+                        </div>
+                        <input type="text" name="" >
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./main.js"></script>
 
 </body>
 </html>

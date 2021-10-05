@@ -36,7 +36,7 @@ body{
 
 .events .teams .team1 .team-info{
     padding-right: 12px;
-    padding-top: 15px;
+    padding-top: 15px; 
 }
 
 .events .teams .team2 .team-info{
@@ -44,27 +44,48 @@ body{
     padding-top: 15px;
 }
 
-.porcem{
+.team2 input[type='text']{
+    margin-left: 13px;
+}
+
+.events .teams .team1 .team-info input[type="text"]{
+    text-align: right;
+}
+
+input[type="text"] {
     color: #8fa3b0;
     font-size: 1.6rem;
     letter-spacing: .1rem;
     font-weight: bold;
+    border: 1px solid #0f1519;
+    background:#0f1519; 
 }
 
-.team-info input[type=checkbox]:before{
-    content:""; 
-    display:inline-block; 
-    width:20px; 
-    height:20px; 
+select.teams-images{
     background:#0f1519;
     border: 1px solid #0f1519;
+    appearance: none;
+    color: white;
+}
+
+
+.vitoria{
+    width: 22px;
+    height: 22px;
+}
+
+.team-info input[type=checkbox]::before{
+    content:""; 
+    display:inline-block; 
+    width:22px; 
+    height:22px; 
+    background:#0f1519;
+    border: 0px solid #0f1519;
 }
 
 .team-info input[type=checkbox]:checked:before{ 
     content: url("./images/checked.png");
-    width:20px; 
-    height:20px; 
- }
+}
 
 .events{
     display: flex;
@@ -81,5 +102,3 @@ img{
     margin: 16px 0;
     box-sizing: content-box;
 }
-
-
